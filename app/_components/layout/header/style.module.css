@@ -1,0 +1,100 @@
+.header {
+  background: #fafbff;
+}
+
+.header svg {
+  stroke: #23274d;
+}
+
+.activeLink {
+  color: #006ffd !important;
+  border-bottom: 2px solid #006ffd;
+}
+
+.activeLinkMobile {
+  color: #006ffd !important;
+}
+
+.activeLinkMobile svg {
+  stroke: #006ffd;
+}
+
+.main {
+  padding-bottom: 8rem;
+}
+
+.activeGroupLink {
+  color: #006ffd !important;
+}
+
+.group-list {
+  position: relative;
+}
+
+.group-list > ul {
+  background: #fff;
+  top: 100%;
+  border: 0;
+  height: 0;
+  overflow: hidden;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.group-list > ul li a {
+  display: block;
+  padding: 8px 0px;
+}
+
+.group-list > ul li:first-child {
+  border-bottom: 1px solid #edeff1;
+}
+
+.active-group-list {
+  transition: all 0.3s ease;
+  height: 100% !important;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-content: space-around;
+}
+
+@media screen and (min-width: 768px) {
+  .group-list > ul {
+    position: absolute;
+    width: 275px;
+    padding: 0px 24px;
+    border-width: 0;
+    border-color: #ddd;
+    border-style: solid;
+  }
+
+  .group-list > ul li a {
+    padding: 16px 0px;
+  }
+
+  .group-list:hover > ul {
+    border-width: 1px;
+    transition: all 0.3s ease;
+    height: 116px;
+    padding: 24px 24px;
+    margin-top: -10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-around;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .group-list:hover > ul {
+    margin-top: -10px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .group-list:hover > ul {
+    margin-top: -20px;
+  }
+}
